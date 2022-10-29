@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Form | Taufik NurFauzi</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+
+<body>
+    <nav>
+        <span class="nama">
+            <h4>Taufik <span class="halftext">Nurfauzi</span></h4>
+        </span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prtv.html">Portofolio</a></li>
+            <li><a href="form.html">Form</a></li>
+            <div class="dropdown">
+                <li>
+                    <a href="about.html">About</a>
+                    <div class="dropdown-content">
+                        <a href="about.html#about">Tentang</a>
+                        <a href="about.html#hobi">Hobi</a>
+                        <a href="about.html#skill">Skill</a>
+                        <a href="about.html#pendidikan">Pendidikan</a>
+                        <a href="about.html#organisasi">Organisasi</a>
+                        <a href="about.html#prestasi">Prestasi</a>
+                        <a href="about.html#nilai">Nilai</a>
+                    </div>
+                </li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script src="script.js"></script>
+    </nav>
+
+    <div class="about_fm">
+        <span class="intro">Form Update Biodata Diri</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-duration="1000" autocomplete="off">
+            <label for="fname">Nama Lengkap</label>
+            <input type="text" id="fname" name="firstname" placeholder="input nama lengkap anda">
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input type="text" id="email" name="email" placeholder="input email anda">
+            <br />
+            <label for="alamat">Alamat</label>
+            <input type="text" id="alamat" name="alamat" placeholder="input alamat anda">
+            <br />
+            <label for="kelamin">Jenis Kelamin</label>
+            <br />
+            <div class="brd">
+                <input type="radio" name="gender" id="laki" value="Laki-Laki">
+                <label for="male">Laki-Laki</label>
+            </div>
+            <div class="brd">
+                <input type="radio" name="gender" id="wanita" value="Perempuan">
+                <label for="male">Perempuan</label>
+            </div>
+            <br />
+            <label for="trans">Transportasi</label>
+            <br />
+            <div class="brd">
+                <input type="checkbox" name="Transportasi" id="trasn" value="Motor">
+                <label for="motor">Motor</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Transportasi" id="trasn" value="Angkotan Umum">
+                <label for="angkot">Angkotan Umum</label>
+            </div>
+            <br />
+            <div class="brd">
+                <input type="checkbox" name="Transportasi" id="trasn" value="Mobil">
+                <label for="angkot">Mobil</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Transportasi" id="trasn" value="Kereta">
+                <label for="angkot">Kereta</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Transportasi" id="trasn" value="Sepeda">
+                <label for="angkot">Sepeda</label>
+            </div>
+            <br />
+            <label for="agama">Agama</label>
+            <br />
+            <select id="agama" name="agama">
+                <option disabled selected hidden value="Pilih Agama">Pilih Agama</option>
+                <option value="Islam">Islam</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budhha">Budhha</option>
+                <option value="Katolik">Katolik</option>
+            </select>
+            <br />
+            <label for="tgl">Tanggal Lahir</label>
+            <br />
+            <input type="date" name="Tanggal" id="tgl">
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>  
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Deksripsi Diri</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" autocomplete="off">
+            <label for="deksripsi">Deksripsi Diri</label>
+            <br />
+            <textarea id="deks" name="deksripsi" rows="6" cols="60"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Hobi</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" autocomplete="off">
+            <label for="Hobi">Hobi</label>
+            <div class="shrt">
+                <select id="hobi" name="hobi">
+                    <option disabled selected hidden value="Pilih Hobi">Pilih Hobi</option>
+                    <option value="Bepergian">Bepergian</option>
+                    <option value="Bermain musik">Bermain musik</option>
+                    <option value="Berkebun">Berkebun</option>
+                    <option value="Coding">Coding</option>
+                    <option value="Game">Game</option>
+                    <option value="Memasak">Memasak</option>
+                    <option value="Membaca Buku">Membaca Buku</option>
+                    <option value="Memancing">Memancing</option>
+                    <option value="Mendaki">Mendaki</option>
+                    <option value="Menonton">Menonton</option>
+                    <option value="Melukis">Melukis</option>
+                    <option value="Olahraga">Olahraga</option>
+                </select>
+                <input type="text" id="lain" name="lainnya" placeholder="input hobi anda lainnya">
+            </div>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Foto Diri</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <label for="dirisendiri">Foto</label>
+            <br />
+            <div class="brd">
+                <input type="file" id="foto" name="foto">
+            </div>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </form>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Kemampuan</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <label for="kemam">Kemampuan</label>
+            <br />
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="HTML">
+                <label for="HTML">HTML</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="CSS">
+                <label for="CSS">CSS</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="JAVASCRIPT">
+                <label for="JAVASCRIPT">JAVASCRIPT</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="PHP">
+                <label for="PHP">PHP</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="JAVA">
+                <label for="JAVA">JAVA</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="PYTHON">
+                <label for="PYTHON">PYTHON</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="TYPESCRIPT">
+                <label for="TYPESCRIPT">TYPESCRIPT</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="RUST">
+                <label for="RUST">RUST</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="GO">
+                <label for="GO">GO</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="RUBY">
+                <label for="RUBY">RUBY</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="C++">
+                <label for="C++">C++</label>
+            </div>
+            <div class="brd">
+                <input type="checkbox" name="Kemampuan" id="kemam" value="Kotlin">
+                <label for="Kotlin">Kotlin</label>
+            </div>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up" data-aos-duration="1000">Form Update Riwayat Pendidikan</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" autocomplete="off">
+            <label for="ped">Jenjang Pendidikan</label>
+            <br />
+            <select id="Jenjang" name="Jenjang">
+                <option disabled selected hidden value="Pilih Jenjang Pendidikan">Pilih Jenjang Pendidikan</option>
+                <option value="Sekolah Dasar" selected>Sekolah Dasar</option>
+                <option value="Sekolah Menengah Pertama">Sekolah Menengah Pertama</option>
+                <option value="Sekolah Menengah Atas">Sekolah Menengah Atas</option>
+                <option value="Sekolah Menengah Kejuruan">Sekolah Menengah Kejuruan</option>
+            </select>
+            <br />
+            <label for="namainstasi">Nama Instasi</label>
+            <input type="text" id="nintas" name="namainstasi" placeholder="input nama instasi anda">
+            <br />
+            <label for="tahunmasuk">Tahun Masuk</label>
+            <br />
+            <input type="number" id="tahunmasuk" name="number" min="2000" max="2022">
+            <br />
+            <label for="tahunkeluar">Tahun Keluar</label>
+            <br />
+            <input type="number" id="tahunkeluar" name="number" min="2000" max="2022">
+            <br />
+            <input type="submit" value="Submit">
+            <br />
+            <div class="bdline"></div>
+            <br />
+            <label for="ped">Jenjang Pendidikan</label>
+            <select id="Jenjang" name="Jenjang">
+                <option disabled selected hidden value="Pilih Jenjang Pendidikan">Pilih Jenjang Pendidikan</option>
+                <option value="Sekolah Dasar">Sekolah Dasar</option>
+                <option value="Sekolah Menengah Pertama" selected>Sekolah Menengah Pertama</option>
+                <option value="Sekolah Menengah Atas">Sekolah Menengah Atas</option>
+                <option value="Sekolah Menengah Kejuruan">Sekolah Menengah Kejuruan</option>
+            </select>
+            <br />
+            <label for="namainstasi">Nama Instasi</label>
+            <input type="text" id="nintas" name="namainstasi" placeholder="input nama instasi anda">
+            <br />
+            <label for="tahunmasuk">Tahun Masuk</label>
+            <br />
+            <input type="number" id="tahunmasuk" name="number" min="2000" max="2022">
+            <br />
+            <label for="tahunkeluar">Tahun Keluar</label>
+            <br />
+            <input type="number" id="tahunkeluar" name="number" min="2000" max="2022">
+            <br />
+            <input type="submit" value="Submit">
+            <br />
+            <div class="bdline"></div>
+            <br />
+            <label for="ped">Jenjang Pendidikan</label>
+            <select id="Jenjang" name="Jenjang">
+                <option disabled selected hidden value="Pilih Jenjang Pendidikan">Pilih Jenjang Pendidikan</option>
+                <option value="Sekolah Dasar">Sekolah Dasar</option>
+                <option value="Sekolah Menengah Pertama">Sekolah Menengah Pertama</option>
+                <option value="Sekolah Menengah Atas">Sekolah Menengah Atas</option>
+                <option value="Sekolah Menengah Kejuruan">Sekolah Menengah Kejuruan</option>
+            </select>
+            <br />
+            <label for="namainstasi">Nama Instasi</label>
+            <input type="text" id="nintas" name="namainstasi" placeholder="input nama instasi anda">
+            <br />
+            <label for="tahunmasuk">Tahun Masuk</label>
+            <br />
+            <input type="number" id="tahunmasuk" name="number" min="2000" max="2022">
+            <br />
+            <label for="tahunkeluar">Tahun Keluar</label>
+            <br />
+            <input type="number" id="tahunkeluar" name="number" min="2000" max="2022">
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Pengalaman Organisasi</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" autocomplete="off">
+            <label for="organisasi">Pengalaman Organisasi</label>
+            <select id="orga" name="organisasi">
+                <option value="Silat">Silat</option>
+                <option value="Osis">Osis</option>
+                <option value="English Club">English Club</option>
+                <option value="Seni Tari">Seni Tari</option>
+                <option value="Pramuka">Pramuka</option>
+                <option value="Paskibra">Paskibra</option>
+                <option value="Rohis">Rohis</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+            <input type="text" id="lain" name="lainnya" placeholder="input pengalaman organisasi anda lainnya">
+            <br />
+            <label for="tahunaktif">Tahun Aktif</label>
+            <br />
+            <input type="number" id="tahunaktif" name="number" min="2000" max="2022">
+            <br />
+            <label for="tahunterakhir">Tahun Terakhir</label>
+            <br />
+            <input type="number" id="tahunterakhir" name="number" min="2000" max="2022">
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Prestasi</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" autocomplete="off">
+            <label for="pres">Prestasi</label>
+            <br />
+            <select id="Jenjang" name="Jenjang">
+                <option disabled selected hidden value="Pilih Jenjang Pendidikan">Pilih Jenjang Pendidikan</option>
+                <option value="Sekolah Dasar">Sekolah Dasar</option>
+                <option value="Sekolah Menengah Pertama">Sekolah Menengah Pertama</option>
+                <option value="Sekolah Menengah Atas">Sekolah Menengah Atas</option>
+                <option value="Sekolah Menengah Kejuruan">Sekolah Menengah Kejuruan</option>
+            </select>
+            <label for="rank">Ranking</label>
+            <br />
+            <input type="number" id="prestasi" name="pretasi" min="0" max="10">
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="about_fm">
+        <span class="intro" data-aos="fade-up">Form Update Nilai</span>
+    </div>
+    <div class="data">
+        <form data-aos="fade-up" data-aos-anchor-placement="center-bottom" autocomplete="off">
+            <label for="matapelajaran">Mata Pelajaran</label>
+            <input type="text" id="matapelajaran" name="pelajaran" placeholder="input nama mata pelajaran">
+            <br />
+            <br />
+            <div id="brdwidth">
+                <label for="semessatu">Semester 1</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 1">
+                <label for="semesdua">Semester 2</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 2">
+                <label for="semestiga">Semester 3</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 3">
+                <label for="semesempat">Semester 4</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 4">
+                <label for="semeslima">Semester 5</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 5">
+                <label for="semesenam">Semester 6</label>
+                <input type="text" id="matapelajaran" name="pelajaran" placeholder="Semester 6">
+            </div>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
